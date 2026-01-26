@@ -17,8 +17,8 @@ const Hero = () => {
         <img 
           src="https://images.pexels.com/photos/6598707/pexels-photo-6598707.jpeg" 
           alt="Consultório" 
-         className="w-full h-full object-cover brightness-[0.65] md:brightness-75 object-[25%_center] md:object-center transition-all duration-500"
-/>
+          className="w-full h-full object-cover brightness-75"
+        />
         <div className="absolute inset-0 bg-white/10"></div>
       </div>
 
