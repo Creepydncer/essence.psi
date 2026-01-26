@@ -18,7 +18,7 @@ const About = () => {
               <img 
                 src={images.profile} 
                 alt={ownerName}
-                className="w-full h-[800px] object-cover hover:scale-105 transition-transform duration-700"
+                className="w-full h-[500px] md:h-[600px] object-cover object-top hover:scale-105 transition-transform duration-700"
                 onError={(e) => {
                   e.target.src = "https://images.pexels.com/photos/4101143/pexels-photo-4101143.jpeg"; // Fallback caso o link do insta expire
                 }}

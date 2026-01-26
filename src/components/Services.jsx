@@ -18,7 +18,7 @@ const Services = () => {
           {services.map((service, index) => (
             <div 
               key={index} 
-              className="group p-8 bg-[#FDFBFA] border border-[#F5EBE8] hover:bg-[#C8A297] transition-all duration-500 cursor-default"
+              className="group p-8 bg-[#FDFBFA] border border-[#F5EBE8] hover:bg-[#C8A297] hover:shadow-xl hover:-translate-y-1 transition-all duration-500 cursor-default"
             >
               {/* O ícone/emoji some e dá lugar a um traço elegante no hover */}
               <div className="w-8 h-[1px] bg-[#C8A297] group-hover:bg-white mb-6 transition-colors"></div>

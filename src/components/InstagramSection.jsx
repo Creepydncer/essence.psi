@@ -2,6 +2,7 @@ import React from "react";
 import { siteConfig } from "../config.jsx";
 import { Instagram } from "lucide-react";
 
+
 const InstagramSection = () => {
   const { instagram, contact } = siteConfig;
   
