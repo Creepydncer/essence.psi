@@ -1,0 +1,147 @@
+// ============================================
+// CONFIGURAÇÃO DO SITE - EDITE AQUI!
+// ============================================
+
+export const siteConfig = {
+  // DADOS PROFISSIONAIS
+  professional: {
+    name: "Jéssica Amaro",
+    title: "Psicóloga Clínica",
+    crp: "CRP 12/18167",
+    specialties: ["Neuropsicóloga", "Terapia Cognitivo Comportamental"],
+    tagline: "Uma psi tão humana quanto você ",
+    
+    // SOBRE (edite aqui o texto completo)
+    about: `Sou psicóloga clínica com especialização em Neuropsicologia e Terapia Cognitivo Comportamental (TCC). 
+    
+    Acredito em um atendimento humanizado, onde cada paciente é acolhido em suas singularidades. Meu trabalho é baseado em evidências científicas, sempre respeitando o tempo e o espaço de cada pessoa.
+    
+    Atendo adolescentes, adultos e idosos, tanto presencialmente quanto online, oferecendo um ambiente seguro e acolhedor para que você possa cuidar da sua saúde mental.`,
+  },
+
+  // CONTATO
+  contact: {
+    whatsapp: "554999245858", // Formato: DDI + DDD + Número (sem espaços)
+    instagram: "essence.psi",
+    email: "contato@essencepsi.com.br", // Opcional
+    calendlyUrl: "https://calendly.com/essencepsi/consulta", // Cole o link do Calendly aqui
+  },
+
+  // LOCALIZAÇÃO
+  location: {
+    city: "Caçador",
+    state: "SC",
+    address: "Rua Exemplo, 123 - Centro", // Endereço completo (opcional)
+    showMap: true, // true = mostra mapa | false = esconde
+    mapEmbedUrl: "https://www.google.com/maps/embed?pb=...", // Cole o embed do Google Maps
+  },
+
+  // TIPOS DE ATENDIMENTO
+  serviceTypes: {
+    presencial: true,
+    online: true,
+  },
+
+  // ÁREAS DE ATUAÇÃO (adicione ou remova conforme necessário)
+  services: [
+    {
+      name: "Ansiedade",
+      icon: "🧠",
+      description: "Tratamento para transtornos de ansiedade generalizada, fobias e preocupações excessivas."
+    },
+    {
+      name: "Depressão",
+      icon: "💭",
+      description: "Acompanhamento terapêutico para sintomas depressivos e humor rebaixado."
+    },
+    {
+      name: "Autoestima",
+      icon: "✨",
+      description: "Trabalho focado no autoconhecimento e fortalecimento da autoimagem."
+    },
+    {
+      name: "Relacionamentos",
+      icon: "💑",
+      description: "Terapia individual ou de casal para melhorar vínculos afetivos."
+    },
+    {
+      name: "TDAH",
+      icon: "🎯",
+      description: "Avaliação e acompanhamento neuropsicológico para déficit de atenção."
+    },
+    {
+      name: "Estresse",
+      icon: "🌊",
+      description: "Técnicas de manejo e redução do estresse do dia a dia."
+    },
+    {
+      name: "Luto",
+      icon: "🕊️",
+      description: "Acolhimento e suporte no processo de elaboração de perdas."
+    },
+    {
+      name: "Síndrome do Pânico",
+      icon: "⚡",
+      description: "Tratamento especializado para crises de pânico e agorafobia."
+    }
+  ],
+
+  // INSTAGRAM REELS (até 3 - cole os links dos Reels aqui)
+  instagram: {
+    showSection: true, // true = mostra seção | false = esconde
+    reels: [
+      "https://www.instagram.com/reel/DMeAZ1yuVCq/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==", // Trocar pelo link real
+      "https://www.instagram.com/p/DH3Ff4ROzjn/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      "https://www.instagram.com/reel/DLqkOzTtbbx/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      
+    ]
+  },
+
+  // CORES DO SITE (mude aqui e o site inteiro muda!)
+  theme: {
+    primary: "#C8A297",       // Rosé/nude principal
+    primaryDark: "#A8877A",   // Tom mais escuro
+    primaryLight: "#F5EBE8",  // Tom clarinho para fundos
+    accent: "#E5C4B8",        // Bege rosado
+    text: "#4A4A4A",          // Texto principal
+    textLight: "#6B6B6B",     // Texto secundário
+    background: "#FDFBFA",    // Fundo off-white
+  },
+
+  // IMAGENS (cole as URLs das imagens aqui)
+  images: {
+    logo: "/logo.png", // Logo (se tiver)
+    profile: "/perfil.png", // Foto de perfil na seção Sobre
+    officePhotos: [ // Fotos do consultório (opcional)
+      "https://via.placeholder.com/600x400/F5EBE8/C8A297?text=Consultório+1",
+      "https://via.placeholder.com/600x400/F5EBE8/C8A297?text=Consultório+2",
+      "https://via.placeholder.com/600x400/F5EBE8/C8A297?text=Consultório+3",
+    ]
+  },
+
+  // CONFIGURAÇÕES AVANÇADAS
+  settings: {
+    showDisclaimer: true, // Aviso CVV/SAMU no footer
+    showTestimonials: false, // Seção de depoimentos (futuro)
+    enableAnimations: true, // Animações suaves
+  }
+};
+
+// ============================================
+// MENSAGENS E TEXTOS FIXOS
+// ============================================
+
+export const messages = {
+  whatsappGreeting: `Olá! Gostaria de agendar uma consulta com a ${siteConfig.professional.name}.`,
+  
+  disclaimer: `⚠️ Atenção: Este site não oferece atendimento imediato a pessoas em crise suicida. 
+  
+Em caso de crise, ligue para o CVV – 188 (24h, gratuito e sigiloso).
+Em caso de emergência médica, procure o hospital mais próximo ou ligue para o SAMU – 192.`,
+
+  bookingIntro: "Escolha a forma que preferir para agendar sua consulta:",
+  
+  ctaButton: "Agendar Consulta",
+};
+
+export default siteConfig;
