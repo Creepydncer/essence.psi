@@ -17,7 +17,7 @@ const Hero = () => {
         <img 
           src="https://images.pexels.com/photos/6598707/pexels-photo-6598707.jpeg" 
           alt="Consultório" 
-          className="w-full h-full object-cover brightness-75"
+          className="w-full h-full object-[object_center] brightness-75"
         />
         <div className="absolute inset-0 bg-white/10"></div>
       </div>
