@@ -24,7 +24,7 @@ const Hero = () => {
 
       <div className="container mx-auto px-6 relative z-10 text-center">
         <span className="text-xs md:text-sm tracking-[0.4em] uppercase text-gray-600 font-medium mb-6 block">
-          {professional.crp || "CRP 12/24558"}
+          {professional.crp || "CRP 12/18167"}
         </span>
         
         <h1 className="text-5xl md:text-8xl font-serif mb-8 text-gray-900 tracking-tight">

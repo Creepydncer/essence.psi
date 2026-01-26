@@ -53,7 +53,7 @@ const About = () => {
             </div>
 
             <div className="mt-10">
-              <p className="text-gray-400 italic font-serif">CRP 12/24558</p>
+              <p className="text-gray-400 italic font-serif">CRP 12/18167</p>
             </div>
           </div>
 
