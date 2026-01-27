@@ -5,7 +5,7 @@ const Services = () => {
   const { services } = siteConfig;
 
   return (
-    <section className="py-24 bg-transparent">
+    <section className="py-12 bg-transparent">
       <div className="container mx-auto px-6">
         <div className="max-w-2xl mx-auto text-center mb-16">
           <h2 className="text-3xl font-light text-gray-800 tracking-[0.2em] uppercase mb-4">

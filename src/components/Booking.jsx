@@ -6,7 +6,7 @@ const Booking = () => {
   const { contact } = siteConfig;
 
   return (
-    <section id="agendamento" className="py-24 bg-[#C8A297] text-white">
+    <section id="agendamento" className="py-12 bg-[#C8A297] text-white">
       <div className="container mx-auto px-6 text-center">
         <h2 className="text-4xl font-serif mb-8 italic">Vamos iniciar sua jornada?</h2>
         <p className="text-xl font-light mb-12 max-w-2xl mx-auto opacity-90 leading-relaxed">

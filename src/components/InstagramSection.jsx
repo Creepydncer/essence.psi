@@ -19,7 +19,7 @@ const InstagramSection = () => {
   };
 
   return (
-    <section className="py-24 bg-transparent">
+    <section className="py-12 bg-transparent">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-serif text-gray-800 mb-4 italic">Pílulas de Conhecimento</h2>

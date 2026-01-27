@@ -5,7 +5,7 @@ const About = () => {
   const { professional, images, ownerName } = siteConfig;
 
   return (
-    <section className="relative z-10 py-24 bg-transparent overflow-hidden">
+    <section className="relative z-10 py-12 bg-transparent overflow-hidden">
       <div className="container mx-auto px-6 max-w-6xl">
         <div className="flex flex-col md:flex-row items-center gap-16">
           
