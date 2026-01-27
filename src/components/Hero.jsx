@@ -1,6 +1,6 @@
 import React from "react";
 import { siteConfig } from "../config.jsx";
-import { Calendar, MessageCircle } from "lucide-react";
+import { Instagram, MessageCircle } from "lucide-react";
 
 const Hero = () => {
   // Pegando os dados com segurança
@@ -37,29 +37,29 @@ const Hero = () => {
           "{professional.tagline || "Cuidado e acolhimento"}"
         </p>
         
-        <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6">
-          {/* Botão Agendar */}
-<a 
-  href={contact.calendlyUrl}
-  target="_blank"
-  rel="noopener noreferrer"
-  className="w-auto md:min-w-[200px] flex items-center justify-center gap-3 bg-[#C8A297] text-white px-8 py-5 rounded-full font-medium hover:bg-[#A8877A] transition-all shadow-xl hover:-translate-y-1 text-lg"
->
-  <Calendar size={22} />
-  Agendar Consulta
-</a>
+       <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6">
+  {/* Botão WhatsApp Principal */}
+  <a 
+    href={`https://wa.me/${contact.whatsapp}`}
+    target="_blank"
+    rel="noopener noreferrer"
+   className="w-full md:min-w-[260px] flex items-center justify-center gap-3 bg-[#C8A297] text-white px-8 py-4 rounded-full font-medium hover:bg-[#A8877A] transition-all shadow-xl hover:-translate-y-1 text-base"
+  >
+    <MessageCircle size={22} />
+    Agendar via WhatsApp
+  </a>
 
-{/* Botão WhatsApp */}
-<a 
-  href={`https://wa.me/${contact.whatsapp}`}
-  target="_blank"
-  rel="noopener noreferrer"
-  className="w-auto md:min-w-[260px] flex items-center justify-center gap-3 bg-white/90 backdrop-blur-sm text-gray-700 border border-gray-200 px-8 py-5 rounded-full font-medium hover:bg-white transition-all shadow-lg hover:-translate-y-1 text-lg"
->
-  <MessageCircle size={22} className="text-[#25D366]" />
-  WhatsApp
-</a>
-        </div>
+  {/* Botão Instagram Secundário */}
+  <a 
+    href={`https://instagram.com/${contact.instagram}`} // Certifique-se que essa variável existe no seu config
+    target="_blank"
+    rel="noopener noreferrer"
+   className="w-full md:min-w-[260px] flex items-center justify-center gap-3 bg-white/90 backdrop-blur-sm text-gray-700 border border-gray-200 px-8 py-4 rounded-full font-medium hover:bg-white transition-all shadow-lg hover:-translate-y-1 text-base"
+  >
+    <Instagram size={22} className="text-[#E4405F]" />
+    Acompanhar no Instagram
+  </a>
+</div>
       </div>
     </section>
   );

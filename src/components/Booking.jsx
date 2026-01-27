@@ -1,6 +1,6 @@
 import React from "react";
 import { siteConfig } from "../config.jsx";
-import { Calendar, MessageSquare } from "lucide-react"; // Importando ícones
+import { Instagram, MessageCircle } from "lucide-react"; // Importando ícones
 
 const Booking = () => {
   const { contact } = siteConfig;
@@ -10,28 +10,32 @@ const Booking = () => {
       <div className="container mx-auto px-6 text-center">
         <h2 className="text-4xl font-serif mb-8 italic">Vamos iniciar sua jornada?</h2>
         <p className="text-xl font-light mb-12 max-w-2xl mx-auto opacity-90 leading-relaxed">
-          Escolha o melhor horário para você através da nossa agenda online. 
-          O atendimento é seguro, sigiloso e acolhedor.
+         Tire suas dúvidas ou acompanhe meu trabalho nas redes sociais. O atendimento é realizado em um espaço seguro, sigiloso e acolhedor.
         </p>
         
-        <div className="flex flex-col md:flex-row justify-center gap-6">
-          <a 
-            href={contact.calendlyUrl}
-            target="_blank"
-            className="flex items-center justify-center gap-2 bg-white text-[#C8A297] px-10 py-4 rounded-full font-medium hover:bg-[#F5EBE8] transition-all shadow-xl text-lg group"
-          >
-            <Calendar size={20} className="group-hover:scale-110 transition-transform" />
-            Ver Horários na Agenda
-          </a>
-          <a 
-            href={`https://wa.me/${contact.whatsapp}`}
-            target="_blank"
-            className="flex items-center justify-center gap-2 border-2 border-white text-white px-10 py-4 rounded-full font-medium hover:bg-white hover:text-[#C8A297] transition-all text-lg"
-          >
-            <MessageSquare size={20} />
-            Dúvidas pelo WhatsApp
-          </a>
-        </div>
+       <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6">
+  {/* Botão Instagram (Substituindo o "Ver Horários") */}
+  <a 
+    href={`https://instagram.com/${contact.instagram}`}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-full md:min-w-[280px] flex items-center justify-center gap-3 bg-white text-[#C8A297] px-8 py-4 rounded-full font-medium hover:bg-gray-50 transition-all shadow-xl hover:-translate-y-1 text-base"
+  >
+    <Instagram size={20} />
+    Ver meu Instagram
+  </a>
+
+  {/* Botão WhatsApp */}
+  <a 
+    href={`https://wa.me/${contact.whatsapp}`}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-full md:min-w-[280px] flex items-center justify-center gap-3 border-2 border-white text-white px-8 py-4 rounded-full font-medium hover:bg-white/10 transition-all shadow-lg hover:-translate-y-1 text-base"
+  >
+    <MessageCircle size={20} />
+    Dúvidas pelo WhatsApp
+  </a>
+</div>
       </div>
     </section>
   );
