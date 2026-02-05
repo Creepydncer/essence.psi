@@ -6,8 +6,24 @@ const Footer = () => {
   const { professional, contact, location } = siteConfig;
 
   return (
-    <footer className="py-16 bg-[#FDFBFA] border-t border-[#F5EBE8]">
+    <footer className="py-16 bg-[#FDFBFA]/60 border-t border-[#F5EBE8]">
       <div className="container mx-auto px-6">
+        
+        {/* MAPA: Inserido antes das colunas ou logo após para dar destaque */}
+        {location.mapEmbedUrl && (
+          <div className="w-full h-64 md:h-80 rounded-3xl overflow-hidden mb-12 shadow-sm border border-[#F5EBE8]">
+            <iframe
+              src={location.mapEmbedUrl}
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Localização do Consultório"
+            ></iframe>
+          </div>
+        )}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           {/* Coluna 1: Identidade */}
           <div className="text-left">

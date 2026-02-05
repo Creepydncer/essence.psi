@@ -33,7 +33,7 @@ export const siteConfig = {
     state: "SC",
     address: "Rua Exemplo, 123 - Centro", // Endereço completo (opcional)
     showMap: true, // true = mostra mapa | false = esconde
-    mapEmbedUrl: "https://www.google.com/maps/embed?pb=...", // Cole o embed do Google Maps
+    mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3562.020247859869!2d-51.02167540000001!3d-26.7756245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e6b72d607aea4f%3A0xeb45f2ad65794f99!2sPsic%C3%B3loga%20e%20Neuropsic%C3%B3loga%20J%C3%A9ssica%20Amaro%20-%20EssencePsi!5e0!3m2!1spt-BR!2sbr!4v1770299523685!5m2!1spt-BR!2sbr"
   },
 
   // TIPOS DE ATENDIMENTO
