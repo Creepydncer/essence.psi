@@ -12,7 +12,7 @@ export const siteConfig = {
     tagline: "Uma psi tão humana quanto você ",
     
     // SOBRE (edite aqui o texto completo)
-    about: `Sou <strong> psicóloga em Caçador/SC </strong>, atuo com a <strong> Terapia Cognitivo-Comportamental (TCC) </strong> e sou especialista em Neuropsicologia. 
+    about: `Sou psicóloga em Caçador/SC, atuo com a Terapia Cognitivo-Comportamental (TCC) e sou especialista em Neuropsicologia. 
     
     Acredito em um atendimento humanizado, onde cada paciente é acolhido em suas singularidades. Meu trabalho é baseado em evidências científicas, sempre respeitando o tempo e o espaço de cada pessoa.
     
