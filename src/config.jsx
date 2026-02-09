@@ -111,7 +111,7 @@ export const siteConfig = {
   // IMAGENS (cole as URLs das imagens aqui)
   images: {
     logo: "/logo.png", // Logo (se tiver)
-    profile: "/perfil.png", // Foto de perfil na seção Sobre
+    profile: "/perfil.webp", // Foto de perfil na seção Sobre
     officePhotos: [ // Fotos do consultório (opcional)
       "https://via.placeholder.com/600x400/F5EBE8/C8A297?text=Consultório+1",
       "https://via.placeholder.com/600x400/F5EBE8/C8A297?text=Consultório+2",

@@ -15,7 +15,7 @@ const Hero = () => {
       {/* Imagem de Fundo */}
       <div className="absolute inset-0 -z-10">
         <img 
-          src="https://images.pexels.com/photos/6598707/pexels-photo-6598707.jpeg" 
+          src="/consultoriojessica.webp" 
           alt="Consultório" 
           className="w-full h-full object-cover brightness-75"
         />
