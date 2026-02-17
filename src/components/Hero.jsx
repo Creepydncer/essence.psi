@@ -43,7 +43,7 @@ const Hero = () => {
     href={`https://wa.me/${contact.whatsapp}`}
     target="_blank"
     rel="noopener noreferrer"
-   className="w-full md:min-w-[260px] flex items-center justify-center gap-3 bg-[#C8A297] text-white px-8 py-4 rounded-full font-medium hover:bg-[#A8877A] transition-all shadow-xl hover:-translate-y-1 text-base"
+  className="w-full md:min-w-[260px] flex items-center justify-center gap-3 bg-[#C8A297] text-white px-8 py-4 rounded-full font-medium hover:bg-[#A8877A] transition-all shadow-xl hover:-translate-y-1 text-base outline-none focus:outline-none ring-0 focus:ring-0 border-none"
   >
     <MessageCircle size={22} />
     Agendar via WhatsApp

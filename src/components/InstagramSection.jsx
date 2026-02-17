@@ -73,20 +73,22 @@ const InstagramSection = () => {
             <p className="text-gray-500 font-light tracking-widest text-xs uppercase">Acompanhe no Instagram</p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            {instagram.reels.slice(0, 3).map((link, index) => (
-              <div key={index} className="w-full aspect-[9/16] rounded-[2rem] overflow-hidden shadow-xl bg-white border-[8px] border-white ring-1 ring-gray-100">
-                <iframe
-                  src={getEmbedLink(link)}
-                  className="w-full h-full"
-                  frameBorder="0"
-                  scrolling="no"
-                  allowtransparency="true"
-                  allow="encrypted-media"
-                ></iframe>
-              </div>
-            ))}
-          </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+  {instagram.reels.slice(0, 3).map((item, index) => ( // 'link' agora é 'item'
+    <div key={index} className="w-full aspect-[9/16] rounded-[2rem] overflow-hidden shadow-xl bg-white border-[8px] border-white ring-1 ring-gray-100">
+      <iframe
+        title={item.title} // Puxa o título que você escreveu no config
+      src={`${item.url.replace(/\/$/, "")}/embed/`} // Passa apenas a URL para a função
+        className="w-full h-full"
+        frameBorder="0"
+        scrolling="no"
+        allowtransparency="true"
+        allow="encrypted-media"
+        loading="lazy"
+      ></iframe>
+    </div>
+  ))}
+</div>
 
           <div className="text-center mt-16">
             <a 

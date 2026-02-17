@@ -87,15 +87,23 @@ export const siteConfig = {
   ],
 
   // INSTAGRAM REELS (até 3 - cole os links dos Reels aqui)
-  instagram: {
-    showSection: true, // true = mostra seção | false = esconde
-    reels: [
-      "https://www.instagram.com/reel/DMeAZ1yuVCq/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==", // Trocar pelo link real
-      "https://www.instagram.com/p/DH3Ff4ROzjn/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-      "https://www.instagram.com/reel/DLqkOzTtbbx/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-      
-    ]
-  },
+ instagram: {
+  showSection: true,
+  reels: [
+    {
+      url: "https://www.instagram.com/reel/DMeAZ1yuVCq/",
+      title: "Vídeo sobre Terapia Cognitivo Comportamental"
+    },
+    {
+      url: "https://www.instagram.com/p/DH3Ff4ROzjn/",
+      title: "Postagem informativa sobre Saúde Mental"
+    },
+    {
+      url: "https://www.instagram.com/reel/DLqkOzTtbbx/",
+      title: "Dicas de bem-estar e psicologia clínica"
+    }
+  ]
+},
 
   // CORES DO SITE (mude aqui e o site inteiro muda!)
   theme: {
@@ -112,6 +120,7 @@ export const siteConfig = {
   images: {
     logo: "/logo.png", // Logo (se tiver)
     profile: "/perfil.webp", // Foto de perfil na seção Sobre
+    alt: "Foto de perfil da psicóloga Jéssica Amaro", // Texto alternativo para a foto de perfil
     officePhotos: [ // Fotos do consultório (opcional)
       "https://via.placeholder.com/600x400/F5EBE8/C8A297?text=Consultório+1",
       "https://via.placeholder.com/600x400/F5EBE8/C8A297?text=Consultório+2",
