@@ -17,6 +17,7 @@ const Hero = () => {
         <img 
           src="/consultoriojessica.webp" 
           alt="Consultório" 
+          fetchPriority="high"
           className="w-full h-full object-cover brightness-75"
         />
         <div className="absolute inset-0 bg-white/10"></div>
