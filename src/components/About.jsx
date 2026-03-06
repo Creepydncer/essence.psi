@@ -16,13 +16,14 @@ const About = () => {
             
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border-[12px] border-white ring-1 ring-gray-100">
               <img 
-                src={images.profile} 
-                alt={ownerName}
-                className="w-full h-[500px] md:h-[600px] object-cover object-top hover:scale-105 transition-transform duration-700"
-                onError={(e) => {
-                  e.target.src = "https://images.pexels.com/photos/4101143/pexels-photo-4101143.jpeg"; // Fallback caso o link do insta expire
-                }}
-              />
+  src={images.profile} 
+  // Se ownerName existir, usa ele. Se não, usa o texto padrão.
+  alt={ownerName ? `Foto de perfil da Psicóloga ${ownerName}` : "Foto de perfil da Psicóloga Jéssica Amaro"}
+  className="w-full h-[500px] md:h-[600px] object-cover object-top hover:scale-105 transition-transform duration-700"
+  onError={(e) => {
+    e.currentTarget.src = "https://images.pexels.com/photos/4101143/pexels-photo-4101143.jpeg";
+  }}
+/>
             </div>
 
             {/* Selo flutuante ou detalhe */}
